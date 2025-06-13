@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+* .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+.main-content {
+    padding: 20px 90px;
+}
+
+
+
+table {
+    min-width: 950px;
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 1rem;
+}
+
+th {
+    background: #f7f7f7;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.03em;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+
+
+thead {
+    background-color: #3498db;
+    color: white;
+}
+
+button.edit-btn,
+button.save-btn,
+button.cancel-btn {
+    padding: 0.35rem 0.9rem;
+    margin-right: 0.3rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+button.edit-btn {
+    background: #1976d2;
+    color: #fff;
+}
+
+button.save-btn {
+    background: #43a047;
+    color: #fff;
+    padding: 0.2rem 0.6rem;
+
+    font-size: 0.85rem;
+
+}
+
+button.cancel-btn {
+    background: #e53935;
+    color: #fff;
+    padding: 0.2rem 0.6rem;
+
+    font-size: 0.85rem;
+
+}
+
+button.edit-btn:hover {
+    background: #1565c0;
+}
+
+button.save-btn:hover {
+    background: #388e3c;
+}
+
+button.cancel-btn:hover {
+    background: #c62828;
+}
+
+td[data-label="Action"],
+th:last-child {
+    min-width: 160px;
+}
+
+@media (max-width: 1000px) {
+    table {
+        min-width: 600px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 1.2rem;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+        background: #fff;
+    }
+
+    td {
+        border: none;
+        position: relative;
+        min-height: 40px;
+        box-sizing: border-box;
+        font-size: 0.98rem;
+        padding-left: 1rem;
+
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        text-align: left;
+
+    }
+
+    td:before {
+        content: attr(data-label) " ";
+        font-weight: 600;
+        color: #1976d2;
+        display: inline-block;
+        width: 40%;
+        min-width: 90px;
+        margin-right: 0.5em;
+        position: static;
+
+        padding: 0;
+        white-space: nowrap;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .main-content {
+        padding: 0;
+    }
+}

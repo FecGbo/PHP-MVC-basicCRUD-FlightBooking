@@ -1,0 +1,112 @@
+.details-form-container {
+    max-width: 420px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+    padding: 24px 16px;
+}
+
+.details-form-container h2 {
+    text-align: center;
+    color: #217dbb;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.details-form .form-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.details-form label {
+    flex: 1 1 140px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #333;
+    font-size: 1rem;
+}
+
+.details-form input[type="text"],
+.details-form textarea {
+    margin-top: 5px;
+    padding: 7px 8px;
+    border: 1px solid #b5c9d6;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #fafdff;
+    transition: border 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.details-form input[type="text"]:focus,
+.details-form textarea:focus {
+    border: 1.5px solid #3498db;
+    outline: none;
+}
+
+.details-form textarea {
+    resize: vertical;
+    min-height: 36px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background: #219150;
+}
+
+.alert.alert-info {
+    background: #eaf6ff;
+    color: #217dbb;
+    border: 1px solid #b5c9d6;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin-top: 14px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .details-form-container {
+        max-width: 98vw;
+        padding: 12px 2vw;
+        margin: 10px 0;
+    }
+
+    .details-form .form-row {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .details-form label {
+        font-size: 0.97rem;
+    }
+
+    .submit-btn {
+        font-size: 0.98rem;
+        padding: 10px 0;
+    }
+
+    .details-form input[type="text"] {
+        height: 60px;
+    }
+}

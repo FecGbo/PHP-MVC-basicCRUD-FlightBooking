@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+form {
+    max-width: 370px;
+    margin: 60px auto 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+    padding: 36px 32px 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 7px;
+    color: #2d6cdf;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px 12px;
+    border: 1px solid #dbeafe;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f8fafc;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border-color: #6a82fb;
+    outline: none;
+    background: #fff;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px 0;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background: #3498db;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.97em;
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+.register {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.register a {
+    color: #2d6cdf;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.register a:hover {
+    color: #fc5c7d;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    color: #2d6cdf;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 18px;
+    transition: color 0.2s;
+    display: inline-block;
+    padding: 0;
+}
+
+.back-btn:hover {
+    color: #fc5c7d;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 500px) {
+    form {
+        max-width: 98vw;
+        padding: 18px 6vw 18px 6vw;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    body {
+        padding: 20px;
+    }
+}

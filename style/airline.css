@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: #f4f7fa;
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+ 
+    flex-direction: column;
+ 
+    min-height: 100vh;
+ 
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 16px;
+    flex: 1;
+ 
+}
+
+h1 {
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 32px;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.airlines-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.airline-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+    padding: 24px 18px 18px 18px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.airline-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(52, 152, 219, 0.18);
+}
+
+.airline-logo {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background: #f8fafd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.airline-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1976d2;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.airline-info {
+    color: #444;
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.view-flights-btn {
+    margin-top: 12px;
+    display: inline-block;
+    background: #3498db;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.view-flights-btn:hover {
+    background: #217dbb;
+}
+
+footer {
+    flex-shrink: 0;
+    
+}
+
+@media (max-width: 1000px) {
+    .airline-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 700px) {
+    .airline-card {
+        width: 100%;
+    }
+
+    .main-content {
+        margin: 16px 0;
+    }
+}

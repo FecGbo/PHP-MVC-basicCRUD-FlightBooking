@@ -1,0 +1,76 @@
+.main-content {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 32px 24px;
+}
+
+form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="time"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+form button[type="submit"] {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+form button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+.alert {
+    margin-top: 18px;
+    padding: 12px 18px;
+    border-radius: 4px;
+    background: #e6f7ff;
+    color: #0056b3;
+    border: 1px solid #b3e0ff;
+    font-size: 15px;
+}
+
+ 
+@media (max-width: 600px) {
+    .main-content {
+        max-width: 98%;
+        padding: 18px 6px;
+    }
+    form label {
+        font-size: 15px;
+    }
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="time"] {
+        font-size: 14px;
+        padding: 7px 8px;
+        margin-bottom: 14px;
+    }
+    form button[type="submit"] {
+        width: 100%;
+        font-size: 15px;
+        padding: 10px 0;
+    }
+}

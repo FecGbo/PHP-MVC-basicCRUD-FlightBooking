@@ -1,0 +1,19 @@
+<phpunit>
+    <testsuites>
+        <testsuite name="Unit Tests">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <ini name="error_reporting" value="-1"/>
+    </php>
+    <bootstrap>vendor/autoload.php</bootstrap>
+    <database>
+        <connection>
+            <host>localhost</host>
+            <dbname>flight_test</dbname>
+            <username>root</username>
+            <password></password>
+        </connection>
+    </database>
+</phpunit>

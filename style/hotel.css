@@ -1,0 +1,56 @@
+@import url("base/common.css");
+
+body {
+    background-color: whitesmoke;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 11px;
+}
+
+
+.header-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-left a,
+.nav-right a {
+
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+
+.nav-left a:hover,
+.nav-right a:hover {
+
+    color: #ff6347;
+}
+
+
+.nav-left {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-right {
+    padding: 5px;
+
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+
+}
+
+.nav-right a {
+    text-align: center;
+}
