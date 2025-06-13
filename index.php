@@ -36,9 +36,7 @@ switch ($action) {
     case 'booking':
         $travellerController->book();
         break;
-    // case 'booking_confirm':
-    //     $travellerController->confirm_booking();
-    //     break;
+
     case 'admin_pending_bookings':
         $adminController->showPendingBookings();
         break;
